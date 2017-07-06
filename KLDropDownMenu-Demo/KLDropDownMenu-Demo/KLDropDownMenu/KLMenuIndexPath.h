@@ -17,7 +17,7 @@ typedef NS_ENUM(NSUInteger, KLMenuTableType) {
 /** 第几个表视图 */
 @property (nonatomic, assign) NSInteger column;
 
-/** 表视图列表的行 */
+/** 当前表视图列表的行 */
 @property (nonatomic, assign) NSInteger row;
 
 /** table类型, 是左边的 table 还是右边的 */

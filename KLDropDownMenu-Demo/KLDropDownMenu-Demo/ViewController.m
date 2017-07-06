@@ -65,6 +65,14 @@
     return NO;
 }
 
+- (CGFloat)widthRatioOfLeftColumn:(NSInteger)column {
+    if (column == 1) {
+        return 1.0 / 3.0;
+    }
+    
+    return 1;
+}
+
 - (NSInteger)currentLeftSelectedRow:(NSInteger)column {
     switch (column) {
         case 0: return _currentOneIndex; break;
@@ -115,14 +123,6 @@
         default: return @""; break;
     }
     
-}
-
-- (CGFloat)widthRatioOfLeftColumn:(NSInteger)column {
-    if (column == 1) {
-        return 1.0 / 3.0;
-    }
-    
-    return 1;
 }
 
 #pragma mark - KLDropDownMenuDelegate
